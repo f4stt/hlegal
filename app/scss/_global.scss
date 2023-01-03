@@ -1,0 +1,57 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $global_color;
+}
+
+.container {
+    padding: 0 30px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        max-width: 648px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        max-width: 904px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        max-width: 1320px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+        max-width: 1600px;
+    }
+}
+
+
+.main-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    background: $gradient_supersoft;
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -5;
+}
